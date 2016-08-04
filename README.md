@@ -12,11 +12,13 @@ Touch ID的调用接口是LocalAuthentication.framework，调用时需要导入�
  #import <LocalAuthentication/LocalAuthentication.h>
 需要用的方法有两个
 
- - (BOOL)canEvaluatePolicy:(LAPolicy)policy 
+
+                - (BOOL)canEvaluatePolicy:(LAPolicy)policy 
                      error:(NSError * __autoreleasing *)error __attribute__((swift_error(none)));
 用来验证设备支不支持Touch ID
 
- - (void)evaluatePolicy:(LAPolicy)policy
+ 
+     - (void)evaluatePolicy:(LAPolicy)policy
         localizedReason:(NSString *)localizedReason
                   reply:(void(^)(BOOL success, NSError * __nullable error))reply;
 验证Touch ID（会有弹出框）
@@ -25,16 +27,12 @@ Touch ID的调用接口是LocalAuthentication.framework，调用时需要导入�
 
  //初始化
  LAContext *context = [LAContext new];
- /** 这个属性用来设置指纹错误后的弹出框的按钮文字
-  *  不设置默认文字为“输入密码”
-  *  设置@""将不会显示指纹错误后的弹出框
-  */
  context.localizedFallbackTitle = @"忘记密码";
 回调方法
 接口提供了Touch ID验证成功和失败的回调方法
-
-[context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-        localizedReason:@"指纹验证"
+       
+       [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+       localizedReason:@"指纹验证"
                   reply:^(BOOL success, NSError * _Nullable error) {
                       if (success) {
                           //验证成功执行
