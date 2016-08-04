@@ -15,6 +15,16 @@
 		8ABA69F21D5318230030ACDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABA69F01D5318230030ACDE /* LaunchScreen.storyboard */; };
 		8ABA69FD1D5318230030ACDE /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA69FC1D5318230030ACDE /* ____Tests.m */; };
 		8ABA6A081D5318230030ACDE /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A071D5318230030ACDE /* ____UITests.m */; };
+		8ABA6A161D5318370030ACDE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABA6A151D5318370030ACDE /* LocalAuthentication.framework */; };
+		8ABA6A221D5325FD0030ACDE /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A1D1D5325FD0030ACDE /* PCCircle.m */; };
+		8ABA6A231D5325FD0030ACDE /* PCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A1F1D5325FD0030ACDE /* PCCircleView.m */; };
+		8ABA6A241D5325FD0030ACDE /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A211D5325FD0030ACDE /* PCCircleViewConst.m */; };
+		8ABA6A281D5326070030ACDE /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A271D5326070030ACDE /* CALayer+Anim.m */; };
+		8ABA6A2E1D53260D0030ACDE /* PCCircleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A2B1D53260D0030ACDE /* PCCircleInfoView.m */; };
+		8ABA6A2F1D53260D0030ACDE /* PCLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A2D1D53260D0030ACDE /* PCLockLabel.m */; };
+		8ABA6A341D5326170030ACDE /* GestureVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A311D5326170030ACDE /* GestureVerifyViewController.m */; };
+		8ABA6A351D5326170030ACDE /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A331D5326170030ACDE /* GestureViewController.m */; };
+		8ABA6A381D53263F0030ACDE /* GestureDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA6A371D53263F0030ACDE /* GestureDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,25 @@
 		8ABA6A031D5318230030ACDE /* 指纹解锁UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "指纹解锁UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABA6A071D5318230030ACDE /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		8ABA6A091D5318230030ACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABA6A151D5318370030ACDE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		8ABA6A1C1D5325FD0030ACDE /* PCCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircle.h; sourceTree = "<group>"; };
+		8ABA6A1D1D5325FD0030ACDE /* PCCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircle.m; sourceTree = "<group>"; };
+		8ABA6A1E1D5325FD0030ACDE /* PCCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleView.h; sourceTree = "<group>"; };
+		8ABA6A1F1D5325FD0030ACDE /* PCCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleView.m; sourceTree = "<group>"; };
+		8ABA6A201D5325FD0030ACDE /* PCCircleViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleViewConst.h; sourceTree = "<group>"; };
+		8ABA6A211D5325FD0030ACDE /* PCCircleViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleViewConst.m; sourceTree = "<group>"; };
+		8ABA6A261D5326070030ACDE /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		8ABA6A271D5326070030ACDE /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		8ABA6A2A1D53260D0030ACDE /* PCCircleInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleInfoView.h; sourceTree = "<group>"; };
+		8ABA6A2B1D53260D0030ACDE /* PCCircleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleInfoView.m; sourceTree = "<group>"; };
+		8ABA6A2C1D53260D0030ACDE /* PCLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLockLabel.h; sourceTree = "<group>"; };
+		8ABA6A2D1D53260D0030ACDE /* PCLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLockLabel.m; sourceTree = "<group>"; };
+		8ABA6A301D5326170030ACDE /* GestureVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVerifyViewController.h; sourceTree = "<group>"; };
+		8ABA6A311D5326170030ACDE /* GestureVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVerifyViewController.m; sourceTree = "<group>"; };
+		8ABA6A321D5326170030ACDE /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		8ABA6A331D5326170030ACDE /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		8ABA6A361D53263F0030ACDE /* GestureDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureDemoViewController.h; sourceTree = "<group>"; };
+		8ABA6A371D53263F0030ACDE /* GestureDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABA6A161D5318370030ACDE /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,7 @@
 		8ABA69D61D5318230030ACDE = {
 			isa = PBXGroup;
 			children = (
+				8ABA6A151D5318370030ACDE /* LocalAuthentication.framework */,
 				8ABA69E11D5318230030ACDE /* 指纹解锁 */,
 				8ABA69FB1D5318230030ACDE /* 指纹解锁Tests */,
 				8ABA6A061D5318230030ACDE /* 指纹解锁UITests */,
@@ -101,6 +132,7 @@
 		8ABA69E11D5318230030ACDE /* 指纹解锁 */ = {
 			isa = PBXGroup;
 			children = (
+				8ABA6A1A1D5325ED0030ACDE /* 手势验证 */,
 				8ABA69E51D5318230030ACDE /* AppDelegate.h */,
 				8ABA69E61D5318230030ACDE /* AppDelegate.m */,
 				8ABA69E81D5318230030ACDE /* ViewController.h */,
@@ -138,6 +170,55 @@
 				8ABA6A091D5318230030ACDE /* Info.plist */,
 			);
 			path = "指纹解锁UITests";
+			sourceTree = "<group>";
+		};
+		8ABA6A1A1D5325ED0030ACDE /* 手势验证 */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA6A301D5326170030ACDE /* GestureVerifyViewController.h */,
+				8ABA6A311D5326170030ACDE /* GestureVerifyViewController.m */,
+				8ABA6A321D5326170030ACDE /* GestureViewController.h */,
+				8ABA6A331D5326170030ACDE /* GestureViewController.m */,
+				8ABA6A361D53263F0030ACDE /* GestureDemoViewController.h */,
+				8ABA6A371D53263F0030ACDE /* GestureDemoViewController.m */,
+				8ABA6A291D53260D0030ACDE /* View */,
+				8ABA6A251D5326070030ACDE /* Gategory */,
+				8ABA6A1B1D5325FD0030ACDE /* FrameWork */,
+			);
+			path = "手势验证";
+			sourceTree = "<group>";
+		};
+		8ABA6A1B1D5325FD0030ACDE /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA6A1C1D5325FD0030ACDE /* PCCircle.h */,
+				8ABA6A1D1D5325FD0030ACDE /* PCCircle.m */,
+				8ABA6A1E1D5325FD0030ACDE /* PCCircleView.h */,
+				8ABA6A1F1D5325FD0030ACDE /* PCCircleView.m */,
+				8ABA6A201D5325FD0030ACDE /* PCCircleViewConst.h */,
+				8ABA6A211D5325FD0030ACDE /* PCCircleViewConst.m */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		8ABA6A251D5326070030ACDE /* Gategory */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA6A261D5326070030ACDE /* CALayer+Anim.h */,
+				8ABA6A271D5326070030ACDE /* CALayer+Anim.m */,
+			);
+			path = Gategory;
+			sourceTree = "<group>";
+		};
+		8ABA6A291D53260D0030ACDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA6A2A1D53260D0030ACDE /* PCCircleInfoView.h */,
+				8ABA6A2B1D53260D0030ACDE /* PCCircleInfoView.m */,
+				8ABA6A2C1D53260D0030ACDE /* PCLockLabel.h */,
+				8ABA6A2D1D53260D0030ACDE /* PCLockLabel.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +351,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABA6A351D5326170030ACDE /* GestureViewController.m in Sources */,
+				8ABA6A381D53263F0030ACDE /* GestureDemoViewController.m in Sources */,
+				8ABA6A341D5326170030ACDE /* GestureVerifyViewController.m in Sources */,
+				8ABA6A2E1D53260D0030ACDE /* PCCircleInfoView.m in Sources */,
+				8ABA6A2F1D53260D0030ACDE /* PCLockLabel.m in Sources */,
 				8ABA69EA1D5318230030ACDE /* ViewController.m in Sources */,
+				8ABA6A281D5326070030ACDE /* CALayer+Anim.m in Sources */,
+				8ABA6A221D5325FD0030ACDE /* PCCircle.m in Sources */,
 				8ABA69E71D5318230030ACDE /* AppDelegate.m in Sources */,
 				8ABA69E41D5318230030ACDE /* main.m in Sources */,
+				8ABA6A241D5325FD0030ACDE /* PCCircleViewConst.m in Sources */,
+				8ABA6A231D5325FD0030ACDE /* PCCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

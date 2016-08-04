@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="exI-q1-N02">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eyi-4a-e6j">
+            <objects>
+                <navigationController id="exI-q1-N02" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gjt-TU-3Hl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.38823529410000002" green="0.6588235294" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kDX-gE-vsU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI2-Od-0Oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-173" y="154"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +34,118 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERF-AB-K7k">
+                                <rect key="frame" x="10" y="71" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.53333333329999999" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vqz-hc-EqF"/>
+                                </constraints>
+                                <state key="normal" title="指纹解锁验证">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchiIDAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iAW-bv-b2z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-Ui-fmV">
+                                <rect key="frame" x="10" y="151" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.53333333329999999" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="手势解锁验证">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZDO-VG-YOd" kind="show" id="AL7-dH-f9W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ERF-AB-K7k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="4rr-yb-9pZ"/>
+                            <constraint firstItem="EXw-Ui-fmV" firstAttribute="trailing" secondItem="ERF-AB-K7k" secondAttribute="trailing" id="Fhf-AY-wbK"/>
+                            <constraint firstItem="ERF-AB-K7k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="Fqy-Op-EHZ"/>
+                            <constraint firstItem="EXw-Ui-fmV" firstAttribute="leading" secondItem="ERF-AB-K7k" secondAttribute="leading" id="P8F-G0-8TT"/>
+                            <constraint firstAttribute="trailing" secondItem="ERF-AB-K7k" secondAttribute="trailing" constant="10" id="Qba-ry-UBC"/>
+                            <constraint firstItem="EXw-Ui-fmV" firstAttribute="height" secondItem="ERF-AB-K7k" secondAttribute="height" id="okj-Wb-n6m"/>
+                            <constraint firstItem="EXw-Ui-fmV" firstAttribute="top" secondItem="ERF-AB-K7k" secondAttribute="bottom" constant="50" id="zwM-hK-hMz"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Qlp-by-hkK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="455" y="141"/>
+        </scene>
+        <!--Gesture Demo View Controller-->
+        <scene sceneID="AY0-0C-uNE">
+            <objects>
+                <viewController id="ZDO-VG-YOd" customClass="GestureDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ydh-AF-qe1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cg1-YT-J8Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jXd-DW-p8o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ5-hP-1HA">
+                                <rect key="frame" x="246" y="100" width="108" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="设置手势密码">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnClick:" destination="ZDO-VG-YOd" eventType="touchUpInside" id="iyK-5D-KIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9Q-ln-4tC">
+                                <rect key="frame" x="246" y="200" width="108" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="登陆手势密码">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnClick:" destination="ZDO-VG-YOd" eventType="touchUpInside" id="kYQ-qz-C7x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzV-Xu-vzH">
+                                <rect key="frame" x="246" y="300" width="108" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="验证手势密码">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnClick:" destination="ZDO-VG-YOd" eventType="touchUpInside" id="PLn-XX-lQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-uF-fkU">
+                                <rect key="frame" x="246" y="400" width="108" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="修改手势密码">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnClick:" destination="ZDO-VG-YOd" eventType="touchUpInside" id="m19-hy-MPj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UzV-Xu-vzH" firstAttribute="top" secondItem="jXd-DW-p8o" secondAttribute="topMargin" constant="300" id="G1Z-SR-ctE"/>
+                            <constraint firstItem="f9Q-ln-4tC" firstAttribute="top" secondItem="jXd-DW-p8o" secondAttribute="topMargin" constant="200" id="O9z-ex-qt8"/>
+                            <constraint firstAttribute="centerX" secondItem="f9Q-ln-4tC" secondAttribute="centerX" id="VXr-rP-kpM"/>
+                            <constraint firstAttribute="centerX" secondItem="iJ5-hP-1HA" secondAttribute="centerX" id="XPV-ZV-SyZ"/>
+                            <constraint firstItem="Orh-uF-fkU" firstAttribute="top" secondItem="jXd-DW-p8o" secondAttribute="topMargin" constant="400" id="lKr-6d-4rA"/>
+                            <constraint firstAttribute="centerX" secondItem="Orh-uF-fkU" secondAttribute="centerX" id="sDR-Vf-reM"/>
+                            <constraint firstAttribute="centerX" secondItem="UzV-Xu-vzH" secondAttribute="centerX" id="uVd-pD-I9E"/>
+                            <constraint firstItem="iJ5-hP-1HA" firstAttribute="top" secondItem="jXd-DW-p8o" secondAttribute="topMargin" constant="100" id="zpn-ma-c0b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ynx-fm-SZy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stZ-Nv-RkU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="104"/>
         </scene>
     </scenes>
 </document>
